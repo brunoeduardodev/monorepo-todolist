@@ -1,0 +1,16 @@
+query ListUsersWithTasks {
+  users {
+    id
+    name
+    email
+    password
+    createdAt
+    updatedAt
+
+    tasks(orderBy: { name: asc }) {
+      id
+      name
+      done
+    }
+  }
+}

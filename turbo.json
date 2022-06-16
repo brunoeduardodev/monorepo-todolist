@@ -7,8 +7,14 @@
     "lint": {
       "outputs": []
     },
+    "generate": {
+      "dependsOn": ["^generate"]
+    },
     "dev": {
       "cache": false
+    },
+    "web#generate": {
+      "dependsOn": ["@packages/graphql#generate"]
     }
   }
 }

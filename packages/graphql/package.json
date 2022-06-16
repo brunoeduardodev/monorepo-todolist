@@ -1,0 +1,27 @@
+{
+  "name": "@packages/graphql",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "generate": "prisma generate && ts-node generate-schema.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/client": "^3.15.2",
+    "prisma": "^3.15.2",
+    "tsconfig": "workspace:*",
+    "typegraphql-prisma": "^0.20.4"
+  },
+  "dependencies": {
+    "@graphql-codegen/cli": "^2.6.2",
+    "@types/graphql-fields": "^1.3.4",
+    "express": "^4.18.1",
+    "graphql": "^15",
+    "graphql-fields": "^2.0.3",
+    "graphql-scalars": "^1.17.0",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "type-graphql": "^1.1.1"
+  }
+}
